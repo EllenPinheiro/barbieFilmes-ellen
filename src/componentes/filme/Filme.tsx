@@ -1,15 +1,11 @@
-import Imagem from '..//img/barbie (1).png'
 import './Filme.css'
-type FilmeProps = {
-    titulo:string,
-    sinopse:string,
-    imagem:string
-}
-
-function Filme(props:FilmeProps){
+export default function Filme(props:FilmeProps){
     return(
         <div className="filme-content">
-            <img className="img-filme" src={Imagem} alt="" />
+         <div className='foto_filme'>
+             <img className="img-filme" src={props.imagem} alt="" />
+         </div>
+           
             <div className="text-barbie">
                 <h1>{props.titulo}</h1>
                 <p className="sinopse">{props.sinopse}</p>
@@ -17,4 +13,9 @@ function Filme(props:FilmeProps){
         </div>
     )
 }
-export default Filme
+
+type FilmeProps = {
+    titulo:string;
+    sinopse:string;
+    imagem:string
+}
