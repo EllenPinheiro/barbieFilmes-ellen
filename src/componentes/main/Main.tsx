@@ -50,6 +50,7 @@ export default function Main() {
                        className='botao_pesquisa'
                        placeholder='Pesquise um Filme'
                        onChange={TrataTexto} />
+                       <img src={Lupa} alt="" />
                 {texto && <p>Resultados Para: {texto} </p>}
             </div>
             <main className="content-main">

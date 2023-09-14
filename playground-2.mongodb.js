@@ -198,7 +198,7 @@ db.treino.insertOne(
     }
 )
 
-64f743fc249ef74c29691f36
+
 
 use("bdacademia")
 //db.treino.find({})
